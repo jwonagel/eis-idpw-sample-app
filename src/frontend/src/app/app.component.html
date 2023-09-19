@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Weather Forecast</h1>
+  <div *ngIf="weatherForecast">
+    <div class="line header">
+      <div class="element">Date</div>
+      <div class="element">Temperatur C</div>
+      <div class="element">Temperatur F</div>
+      <div class="element">Summary</div>
+    </div>
+    <div *ngFor="let weatherData of weatherForecast | async" class="wrapper">
+      <div class="line">
+        <div class="element">{{weatherData.date | date}}</div>
+        <div class="element">{{weatherData.temperatureC}}</div>
+        <div class="element">{{weatherData.temperatureF}}</div>
+        <div class="element">{{weatherData.summary}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

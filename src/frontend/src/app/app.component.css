@@ -1,0 +1,28 @@
+
+.container{
+  margin: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.element {
+  text-align: end;
+  padding: 3px 5px 3px 4px;
+  border: 1px solid gray;
+}
+
+.header .element {
+  background: darkblue;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.wrapper:nth-child(even){
+  background: lightblue;
+}
