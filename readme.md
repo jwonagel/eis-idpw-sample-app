@@ -38,3 +38,7 @@ dotnet restore
 dotnet run
 ```
 
+## Aufnahme Präsentation
+
+https://egeliinfo-my.sharepoint.com/:v:/g/personal/jwo_nagel_egeli-informatik_ch/ERSCWcmz8v5ItaSQUfpG9zcBwo9XiP7F9CAp2moNVPFEGw
+
