@@ -1,4 +1,5 @@
 <div class="container">
+
   <h1>Weather Forecast</h1>
   <div *ngIf="weatherForecast">
     <div class="line header">
@@ -16,6 +17,23 @@
       </div>
     </div>
   </div>
+
+  <div class="userinfo">
+    <h2>User</h2>
+    <p>{{ userName }}</p>
+
+    <h2>Id-Token</h2>
+    <p>{{ idToken }}</p>
+
+    <div *ngFor="let c of idClaims | keyvalue">
+      {{c.key}}: {{c.value}}
+    </div>
+
+    <h2>Access Token</h2>
+    <p>{{ accessToken }}</p>
+  </div>
+
+  <button (click)="refresh()">Refresh token</button>
 </div>
 
 
